@@ -55,10 +55,23 @@ namespace Assignment_1_Bartosz
             }
         }
 
+        public Book()
+        {
 
+        }
 
+        public Book(string title, string author, int pageNumber, string isbn13)
+        {
+            Title = title;
+            Author = author;
+            PageNumber = pageNumber;
+            Isbn13 = isbn13;
 
+        }
 
-
+        public override string ToString()
+        {
+            return $"ISBN13: {Isbn13}, Author: {Author}, Title: {Title}, Page number: {PageNumber}.";
+        }
     }
 }
